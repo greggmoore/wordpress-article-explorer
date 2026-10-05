@@ -1,0 +1,18 @@
+.bae { --bae-accent: #124f94; --bae-border: #727b86; max-width: 72rem; margin: 2rem auto; color: #17212b; font: inherit; }
+.bae *, .bae *::before, .bae *::after { box-sizing: border-box; }
+.bae .bae-form { display: flex; flex-wrap: wrap; gap: 1rem; align-items: end; }
+.bae .bae-form > div { flex: 1 1 14rem; }
+.bae label { display: block; font-weight: 600; margin-bottom: .35rem; }
+.bae input, .bae select, .bae button { font: inherit; min-height: 2.75rem; border: 1px solid var(--bae-border); border-radius: .3rem; padding: .6rem .8rem; }
+.bae input, .bae select { width: 100%; background: #fff; color: #17212b; }
+.bae button { background: var(--bae-accent); color: #fff; cursor: pointer; }
+.bae button:disabled { background: #e3e7eb; color: #414952; cursor: default; }
+.bae :is(a, button, input, select):focus-visible { outline: 3px solid #124f94; outline-offset: 3px; }
+.bae .bae-results { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); list-style: none; padding: 0; gap: 1rem; }
+.bae .bae-card { margin: 0; padding: 1.25rem; border: 1px solid var(--bae-border); border-radius: .5rem; background: #fff; overflow-wrap: anywhere; }
+.bae .bae-card h3 { margin-top: 0; }
+.bae a { color: var(--bae-accent); text-decoration: underline; text-underline-offset: .15em; }
+.bae time { color: #46515e; font-size: .9em; }
+.bae .bae-status { min-height: 1.5em; }
+.bae .bae-pagination { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; }
+.bae [hidden] { display: none !important; }
